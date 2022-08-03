@@ -1,0 +1,70 @@
+body
+{
+    background: #163049;
+    font-family: Verdana;
+    max-width: 900px;           /*LARGURA. 'max-width' faz com que o elemento varie de tamanho caso a tela diminua pra menos de 900px (com o 'with' o elemento NÃO se ajusta!). O elemento tem NO MÁXIMO 900px (mas pode ter menos)*/
+    margin: auto;               /*O 'margin' em 'auto' cria um espaçamento igual dos dois lados, ou seja, CENTRALIZA o elemento*/
+}
+
+.photo
+{
+    margin-top: 15px;
+    border: 2px solid #c29d5c;
+    border-radius: 50px;
+}
+
+#title, .subtitle, .post_title  /*'#' em CSS é o 'id' do HTML*/
+                                /*'.' em CSS é o 'class' do HTML*/
+                                /*'title' é um 'id' e 'subtitle' e 'post_title' são 'class'*/
+{
+    color: #c29d5c;
+}
+
+#title
+{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.post_title
+{
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 15px;
+    color: #163049;
+}
+
+.post
+{
+    background: rgb(207, 207, 207);
+    padding: 15px;                    /*Espaçamento entre o conteúdo e a borda*/
+    border: 3px solid #505050;      /*Borda de 3 pixels na cor sólida 'preto'*/
+    margin-bottom: 15px;              /*Espaçamento entre elementos*/
+    border-radius: 5px;
+}
+
+.post_content
+{
+    margin: 0;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+.post_image
+{
+    margin-bottom: 15px;
+    width: 100%;                        /*Colocando a largura em '100%' faz com que a imagem fique ocupando a largura total do espaço que ela está contida*/
+}
+
+.contacts_list
+{
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+.contacts_list li a                     /*Adiciona o 'li' (item) e o 'a' (âncora). Assim, as alterações serão feitas para ambos*/
+{
+    color: lightsteelblue;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>                                              <!--Tag raiz do código. Todos os elementos devem estar dentro dela-->
+    <head>                                          <!--Elementos que serão lidos pelo navegador-->
+        <meta charset="utf-8">                      <!--Codificação de caracteres-->
+        <title>Álvaro Brayner de Oliveira</title>   <!--Nome da ABA-->
+        <link rel="stylesheet" href="style.css">    <!-- ##CSS## 'stylesheet' diz ao navegador qual o tipo de arquivo que está sendo adicionado-->
+    </head>
+    <body>                                          <!--Conteúdo visível ao usuário: textos, imagens, vídeos-->
+        <header>                                    <!--Título da página (cabeçalho)-->
+            <img src="Foto_Profissional.jpg" alt="Ilustração do rosto de Álvaro Brayner de Oliveira" class="photo">
+                                                    <!--'img' adiciona uma imagem-->
+                                                    <!--'src' (source) é o local da imagem. No caso, como está na mesma pasta, basta colocar o nome do arquivo-->
+                                                    <!--'alt' mostra a descrição da foto para acessibilidade (leitores de tela)-->
+            <h1 id="title">Álvaro Brayner de Oliveira</h1>     <!--'h1' a 'h6' Representam a importância de um título dentro da página (Só pode ter um 'h1' por página!)-->
+                                                    <!-- ##CSS## Só pode haver UM ÚNICO 'id' por página!-->
+                                                    <!-- ##CSS## Como o 'h1' é o título principal, não deve ser repetido, então foi colocado um 'id'-->
+        </header>
+        <section>                                   <!--Seção de conteúdo (lista de posts)-->
+            <header>
+                <h2 class="subtitle">Perfil</h2>     <!--Mostra o título da lista de posts-->
+                                                    <!-- ##CSS## 'class'-->
+            </header>
+            <article class="post">                  <!--Conteúdo relevante-->
+                <header>
+                    <h3 class="post_title">Sobre mim</h3>
+                    <img src="html_code.jpg" alt="IDE com um código HTML" class="post_image">
+                </header>
+                <p class="post_content">                                 <!--O 'p' representa textos maiores (parágrafos, por exemplo). Pode colocar não só texto, mas links, imagens, vídeos, etc-->
+                    Atualmente me encontro em transição de carreira para a área de tecnologia, buscando me tornar desenvolvedor de software. Cursei o NexT, da CESAR School, que é um programa voltado para pessoas que desejam ingressar no mercado de tecnologia da informação. Além disso, sou formado em Administração e em Gestão Portuária.
+                    <br><br>O curso de Administração é uma formação que me ajuda a pensar estrategicamente e possui um leque de conhecimento bastante amplo. Isso me ajuda a estimular minha maior característica: a curiosidade. Gosto muito de descobrir e aprender coisas novas e de saber como elas funcionam. E isso tem tudo a ver com a carreira de desenvolvedor!
+                                                    <!--'a' (âncora) interliga vários elementos-->
+                                                    <!--'href' é um hiperlink (modelo: <a herf="link">"texto que vai aparecer na página"</a>)-->
+                                                    <!--'target' indica como o link vai ser aberto. No caso do "_blank", abre em uma NOVA ABA-->
+                </p>
+            </article>
+        </section>
+        <footer>                                    <!--Rodapé-->
+            <ul class="contacts_list" class="footer_content">             <!--Lista-->
+                <li>
+                    <a href="https://www.linkedin.com/in/alvarobrayner/" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://github.com/alvarobrayner" target="_blank">GitHub</a>
+                </li>
+                <li>
+                    <a href="mailto:alvarobrayner@gmail.com">E-mail</a>
+                </li>
+                <li>
+                    <a href="tel:(81)999999999">Telefone</a>
+                </li>
+            </ul>
+                                                    <!--'ul' (lista DESORDENADA): Lista na qual a ordem dos itens NÃO é importante-->
+                                                    <!--'ol' (lista ORDENADA): Lista na qual a ordem dos itens É IMPORTANTE-->
+                                                    <!--'li': Item da lista-->
+        </footer>
+    </body>
+</html>
